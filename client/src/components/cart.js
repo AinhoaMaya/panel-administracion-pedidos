@@ -94,6 +94,10 @@ class Cart extends HTMLElement {
           font-weight: 600;
         }
 
+        button{
+          cursor: pointer;
+        }
+        
         .button-finish-order{
           bottom: 2rem;
           display: flex;

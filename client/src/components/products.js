@@ -112,6 +112,10 @@ class Products extends HTMLElement {
           text-align: center;
         }
 
+        button{
+          cursor: pointer;
+        }
+
         .orders-buttons{
           align-items: center;
           display: flex;

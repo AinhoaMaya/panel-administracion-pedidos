@@ -41,6 +41,10 @@ class Finish extends HTMLElement {
           margin: 0;
         }
 
+        button{
+          cursor: pointer;
+        }
+
         .completed-order-container{
           align-items: center;
           display: flex;

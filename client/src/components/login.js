@@ -17,6 +17,10 @@ class Login extends HTMLElement {
           width: 100%;
         }
 
+        button{
+          cursor: pointer;
+        }
+
         .login-title{
           padding: 2rem;
           color: hsl(0, 0%, 100%);

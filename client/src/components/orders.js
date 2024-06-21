@@ -48,6 +48,10 @@ class Orders extends HTMLElement {
           font-family: "Roboto", sans-serif;
         }
 
+        button, input{
+          cursor: pointer;
+        }
+
         .products{
           align-items: center;
           display: flex;
