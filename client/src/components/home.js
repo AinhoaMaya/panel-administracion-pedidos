@@ -19,6 +19,10 @@ class Home extends HTMLElement {
         height: 100vh;
       }
 
+      button{
+        cursor: pointer;
+      }
+      
       .orders-buttons{
         display: flex;
         flex-direction: column;

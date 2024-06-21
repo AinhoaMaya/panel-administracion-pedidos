@@ -69,7 +69,7 @@ class NotFound extends HTMLElement {
             <img src="./public/not-found.webp">
             <p>NO ENCUENTRO LA PÁGINA</p>
             <button class="home-button">
-              <a href="/">Inicio</a>
+              <a href="/home">Inicio</a>
             </button>
           </div>
         </div>
