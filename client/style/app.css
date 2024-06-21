@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body{
+  background-color: hsl(261, 98%, 32%);
+  display: grid;
+  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+}
