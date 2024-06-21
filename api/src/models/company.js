@@ -1,5 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-  const User = sequelize.define('User',
+  const Company = sequelize.define('Company',
     {
       id: {
         type: DataTypes.INTEGER,
@@ -7,11 +7,23 @@ module.exports = function (sequelize, DataTypes) {
         primaryKey: true,
         allowNull: false
       },
-      name: {
+      commercialAddress: {
         type: DataTypes.STRING,
         allowNull: false
       },
-      email: {
+      fiscalAddress: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      commercialName: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      fiscalName: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      vatNumber: {
         type: DataTypes.STRING,
         allowNull: false
       },
@@ -23,9 +35,8 @@ module.exports = function (sequelize, DataTypes) {
       }
     }, {
       sequelize,
-      tableName: 'users',
+      tableName: 'companies',
       timestamps: true,
-      // cuando eliminas un registro, pone la fecha de cuando fue eliminado:
       paranoid: true, 
       indexes: [
         {
@@ -40,9 +51,9 @@ module.exports = function (sequelize, DataTypes) {
     }
   )
 
-  User.associate = function (models) {
+  Company.associate = function (models) {
    
   }
 
-  return User
+  return Company
 }
